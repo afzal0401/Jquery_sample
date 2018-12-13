@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Id Selector in jQuery</title>
+</head>
+<body>
+	<p>first paragraph</p>
+	<p>second paragraph</p>
+	<button id="fadeout">Fade out</button>
+	<button id="fadein">Fade in</button>
+	<button id="toggle">Toggle</button>
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#fadeout").click(function(){
+				$("p").fadeOut(2000);
+			});
+			$("#fadein").click(function(){
+				$("p").fadeIn(2000);
+			});
+			$("#toggle").click(function(){
+				$("p").fadeToggle(2000);
+			});
+		});
+	</script>
+	</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slides in jQuery</title>
+</head>
+<body>
+	<p>first paragraph</p>
+	<p>second paragraph</p>
+	<button id="slideup">slide up</button>
+	<button id="slidedown">slide down</button>
+	<button id="toggle">Toggle</button>
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#slideup").click(function(){
+				$("p").slideUp('slow');
+			});
+			$("#slidedown").click(function(){
+				$("p").slideDown('fast');
+			});
+			$("#toggle").click(function(){
+				$("p").slideToggle(2000);
+			});
+		});
+	</script>
+	</html>

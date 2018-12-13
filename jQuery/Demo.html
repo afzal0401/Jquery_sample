@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script>
+	 var Number n=123;
+	 var Number sum=0;
+	 var Number temp=n;
+	 var Number rem=0;
+	while(temp>0)
+	{
+		rem=temp%10;
+		temp=temp/10;
+		sum=sum*10+rem;
+	}
+	if(n==sum)
+	{
+		document.write("palindrome")
+
+	}else
+	{
+		document.write("not a palindrome")
+	}
+	
+</script>
+</html>
